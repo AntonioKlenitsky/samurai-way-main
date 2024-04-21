@@ -7,7 +7,6 @@ import photo from "../../assets/images/A.png"
 
 export const Header = () => {
     return (
-        <div>
             <StyledHeader>
                 <Container>
                     <FlexWrapper justify={"left"}>
@@ -15,7 +14,6 @@ export const Header = () => {
                     </FlexWrapper>
                 </Container>
             </StyledHeader>
-        </div>
     );
 };
 
