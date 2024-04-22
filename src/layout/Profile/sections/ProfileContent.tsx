@@ -1,20 +1,18 @@
 import React from 'react';
 import styled from "styled-components";
-import {Container} from "../../components/Container";
-import {FlexWrapper} from "../../components/FlexWrapper";
-import photo from "../../assets/images/A.png";
-import {Post} from "./Profile/My_Posts/Post/Post";
-import {MyPosts} from "./Profile/My_Posts/MyPosts";
+import {Container} from "../../../components/Container";
+import {FlexWrapper} from "../../../components/FlexWrapper";
+import photo from "../../../assets/images/A.png";
+import {Post} from "./MyPosts/Posts/Post";
+import {MyPosts} from "./MyPosts/MyPosts";
 
-export const Content = () => {
+export const ProfileContent = () => {
     return (
         <StyledContent>
-            <Container>
                 <FlexWrapper>
                     <StyleImage src={photo} alt={"no photo"}/>
                 </FlexWrapper>
                 <MyPosts/>
-            </Container>
         </StyledContent>
     );
 };

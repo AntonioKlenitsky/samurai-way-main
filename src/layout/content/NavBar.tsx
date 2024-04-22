@@ -2,13 +2,14 @@ import React from "react";
 import {Container} from "../../components/Container";
 import styled from "styled-components";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {Content} from "./Content";
 
 
 export const NavBar  = () => {
     return (
         <StyledNavBar>
             <Container>
-                <FlexWrapper justify={'left'} >
+                <FlexWrapper justify={'left'} gap={"200px"} >
                     <nav>
                         <div>
                             <a href="">Profile</a>
@@ -26,6 +27,7 @@ export const NavBar  = () => {
                             <a href="">Settings</a>
                         </div>
                     </nav>
+                    <Content/>
                 </FlexWrapper>
             </Container>
         </StyledNavBar>
@@ -34,5 +36,7 @@ export const NavBar  = () => {
 
 const StyledNavBar = styled.div`
     text-align: left;
-    
+    background-color: yellow;
+    max-width: 25%;
+        
 `

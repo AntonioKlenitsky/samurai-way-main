@@ -1,19 +1,13 @@
 import React from 'react';
 import './App.css';
 import {Header} from "./layout/header/Header";
-import {NavBar} from "./layout/sections/NavBar";
-import {Content} from "./layout/sections/Content";
-import {FlexWrapper} from "./components/FlexWrapper";
+import {NavBar} from "./layout/content/NavBar";
 
 function App() {
     return (
         <div className="App">
             <Header/>
-            <FlexWrapper gap={'200px'}>
-                <NavBar/>
-                <Content/>
-            </FlexWrapper>
-
+            <NavBar/>
         </div>
     );
 }
